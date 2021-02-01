@@ -29,7 +29,7 @@
     [self setupChildViewControllerIn:boyViewController withImage:@"boy_nor" andSelectedImage:@"boy_sel" andTitle:@"小细" andTag:0];
     
     YJGirlViewController *girlViewController = [[YJGirlViewController alloc] init];
-    [self setupChildViewControllerIn:girlViewController withImage:@"boy_nor" andSelectedImage:@"boy_sel" andTitle:@"阿金" andTag:1];
+    [self setupChildViewControllerIn:girlViewController withImage:@"girl_nor" andSelectedImage:@"girl_sel" andTitle:@"阿金" andTag:1];
 }
 
 - (void)setupChildViewControllerIn:(UIViewController *)viewController withImage:(NSString *)image andSelectedImage:(NSString *)selectedImage andTitle:(NSString *)title andTag:(NSInteger)tag {
