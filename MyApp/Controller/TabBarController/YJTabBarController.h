@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  YJTabBarController.h
 //  MyApp
 //
 //  Created by Apple on 2021/2/1.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface YJTabBarController : UITabBarController
 
 @end
 
+NS_ASSUME_NONNULL_END

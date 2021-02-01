@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		1870965525C823EA00A3027D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1870965425C823EA00A3027D /* AppDelegate.m */; };
 		1870965825C823EA00A3027D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1870965725C823EA00A3027D /* SceneDelegate.m */; };
-		1870965B25C823EA00A3027D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1870965A25C823EA00A3027D /* ViewController.m */; };
-		1870965E25C823EB00A3027D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1870965C25C823EB00A3027D /* Main.storyboard */; };
 		1870966025C823ED00A3027D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1870965F25C823ED00A3027D /* Assets.xcassets */; };
 		1870966325C823ED00A3027D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1870966125C823ED00A3027D /* LaunchScreen.storyboard */; };
 		1870966625C823ED00A3027D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1870966525C823ED00A3027D /* main.m */; };
+		18CA75A525C8300500872836 /* YJTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CA75A425C8300500872836 /* YJTabBarController.m */; };
+		18CA75A925C8334800872836 /* YJBoyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CA75A825C8334800872836 /* YJBoyViewController.m */; };
+		18CA75AC25C8337200872836 /* YJGirlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CA75AB25C8337200872836 /* YJGirlViewController.m */; };
 		B247DB43EB3EC16844E65169 /* Pods_MyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3AF94974C96501B8A53B191 /* Pods_MyApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,13 +24,16 @@
 		1870965425C823EA00A3027D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1870965625C823EA00A3027D /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		1870965725C823EA00A3027D /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		1870965925C823EA00A3027D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1870965A25C823EA00A3027D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		1870965D25C823EB00A3027D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1870965F25C823ED00A3027D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1870966225C823ED00A3027D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1870966425C823ED00A3027D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1870966525C823ED00A3027D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18CA75A325C8300500872836 /* YJTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJTabBarController.h; sourceTree = "<group>"; };
+		18CA75A425C8300500872836 /* YJTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJTabBarController.m; sourceTree = "<group>"; };
+		18CA75A725C8334800872836 /* YJBoyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJBoyViewController.h; sourceTree = "<group>"; };
+		18CA75A825C8334800872836 /* YJBoyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJBoyViewController.m; sourceTree = "<group>"; };
+		18CA75AA25C8337200872836 /* YJGirlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJGirlViewController.h; sourceTree = "<group>"; };
+		18CA75AB25C8337200872836 /* YJGirlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJGirlViewController.m; sourceTree = "<group>"; };
 		2FE9756580AA640D174420DE /* Pods-MyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyApp.debug.xcconfig"; path = "Target Support Files/Pods-MyApp/Pods-MyApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B3AF94974C96501B8A53B191 /* Pods_MyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B719DAA89794CEA52D90FBD0 /* Pods-MyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyApp.release.xcconfig"; path = "Target Support Files/Pods-MyApp/Pods-MyApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -68,13 +72,13 @@
 		1870965225C823EA00A3027D /* MyApp */ = {
 			isa = PBXGroup;
 			children = (
+				18CA759F25C82F7100872836 /* Model */,
+				18CA75A025C82F7B00872836 /* View */,
+				18CA759E25C82F6100872836 /* Controller */,
 				1870965325C823EA00A3027D /* AppDelegate.h */,
 				1870965425C823EA00A3027D /* AppDelegate.m */,
 				1870965625C823EA00A3027D /* SceneDelegate.h */,
 				1870965725C823EA00A3027D /* SceneDelegate.m */,
-				1870965925C823EA00A3027D /* ViewController.h */,
-				1870965A25C823EA00A3027D /* ViewController.m */,
-				1870965C25C823EB00A3027D /* Main.storyboard */,
 				1870965F25C823ED00A3027D /* Assets.xcassets */,
 				1870966125C823ED00A3027D /* LaunchScreen.storyboard */,
 				1870966425C823ED00A3027D /* Info.plist */,
@@ -83,13 +87,63 @@
 			path = MyApp;
 			sourceTree = "<group>";
 		};
+		18CA759E25C82F6100872836 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18CA75AD25C8337C00872836 /* GirlController */,
+				18CA75A625C8330800872836 /* BoyController */,
+				18CA75A125C82F9200872836 /* TabBarController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18CA759F25C82F7100872836 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18CA75A025C82F7B00872836 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18CA75A125C82F9200872836 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				18CA75A325C8300500872836 /* YJTabBarController.h */,
+				18CA75A425C8300500872836 /* YJTabBarController.m */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		18CA75A625C8330800872836 /* BoyController */ = {
+			isa = PBXGroup;
+			children = (
+				18CA75A725C8334800872836 /* YJBoyViewController.h */,
+				18CA75A825C8334800872836 /* YJBoyViewController.m */,
+			);
+			path = BoyController;
+			sourceTree = "<group>";
+		};
+		18CA75AD25C8337C00872836 /* GirlController */ = {
+			isa = PBXGroup;
+			children = (
+				18CA75AA25C8337200872836 /* YJGirlViewController.h */,
+				18CA75AB25C8337200872836 /* YJGirlViewController.m */,
+			);
+			path = GirlController;
+			sourceTree = "<group>";
+		};
 		320701036F983377D750B472 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				2FE9756580AA640D174420DE /* Pods-MyApp.debug.xcconfig */,
 				B719DAA89794CEA52D90FBD0 /* Pods-MyApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -161,7 +215,6 @@
 			files = (
 				1870966325C823ED00A3027D /* LaunchScreen.storyboard in Resources */,
 				1870966025C823ED00A3027D /* Assets.xcassets in Resources */,
-				1870965E25C823EB00A3027D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,8 +250,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1870965B25C823EA00A3027D /* ViewController.m in Sources */,
 				1870965525C823EA00A3027D /* AppDelegate.m in Sources */,
+				18CA75AC25C8337200872836 /* YJGirlViewController.m in Sources */,
+				18CA75A525C8300500872836 /* YJTabBarController.m in Sources */,
+				18CA75A925C8334800872836 /* YJBoyViewController.m in Sources */,
 				1870966625C823ED00A3027D /* main.m in Sources */,
 				1870965825C823EA00A3027D /* SceneDelegate.m in Sources */,
 			);
@@ -207,14 +262,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1870965C25C823EB00A3027D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1870965D25C823EB00A3027D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1870966125C823ED00A3027D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

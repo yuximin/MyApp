@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "YJTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    if (@available(iOS 13.0, *)) {
+        
+    } else {
+        YJTabBarController *tabBarController = [[YJTabBarController alloc] init];
+        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tabBarController];
+        navigationController.navigationBar.hidden = YES;
+        self.rootViewController = navigationController;
+        
+        self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+        self.window.rootViewController = self.rootViewController;
+        self.window.backgroundColor = [UIColor whiteColor];
+        [self.window makeKeyAndVisible];
+    }
+    
     return YES;
 }
 
