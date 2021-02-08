@@ -14,11 +14,29 @@
 
 @implementation YJGirlViewController
 
+#pragma mark - Lifecycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.view.backgroundColor = [UIColor colorWithRed:255.0f/255.0f green:192.0f/255.0f blue:203.0f/255.0f alpha:1.0f];
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self setNavigationBar];
+    [self setTabBar];
+}
+
+#pragma mark - UI
+
+/// 设置导航栏
+- (void)setNavigationBar {
+    self.navigationController.navigationBar.barTintColor = GIRL_TINT_COLOR;
+    self.navigationItem.title = @"我想你啦";
+}
+
+/// 设置标签栏
+- (void)setTabBar {
+    [self.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor grayColor], NSFontAttributeName:[UIFont systemFontOfSize:14]} forState:UIControlStateNormal];
+    [self.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:GIRL_TINT_COLOR, NSFontAttributeName:[UIFont systemFontOfSize:14]} forState:UIControlStateSelected];
 }
 
 /*

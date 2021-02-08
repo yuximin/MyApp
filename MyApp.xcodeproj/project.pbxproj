@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,6 +28,8 @@
 		1870966225C823ED00A3027D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1870966425C823ED00A3027D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1870966525C823ED00A3027D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		188A4C7E25D1147A0002BEC9 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		188A4C8025D114F00002BEC9 /* MacroDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroDefine.h; sourceTree = "<group>"; };
 		18CA75A325C8300500872836 /* YJTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJTabBarController.h; sourceTree = "<group>"; };
 		18CA75A425C8300500872836 /* YJTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJTabBarController.m; sourceTree = "<group>"; };
 		18CA75A725C8334800872836 /* YJBoyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJBoyViewController.h; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 		1870965225C823EA00A3027D /* MyApp */ = {
 			isa = PBXGroup;
 			children = (
+				188A4C7F25D114C10002BEC9 /* Utils */,
 				18CA759F25C82F7100872836 /* Model */,
 				18CA75A025C82F7B00872836 /* View */,
 				18CA759E25C82F6100872836 /* Controller */,
@@ -83,8 +86,25 @@
 				1870966125C823ED00A3027D /* LaunchScreen.storyboard */,
 				1870966425C823ED00A3027D /* Info.plist */,
 				1870966525C823ED00A3027D /* main.m */,
+				188A4C7E25D1147A0002BEC9 /* PrefixHeader.pch */,
 			);
 			path = MyApp;
+			sourceTree = "<group>";
+		};
+		188A4C7F25D114C10002BEC9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				188A4C8125D117E40002BEC9 /* Defines */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		188A4C8125D117E40002BEC9 /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+				188A4C8025D114F00002BEC9 /* MacroDefine.h */,
+			);
+			path = Defines;
 			sourceTree = "<group>";
 		};
 		18CA759E25C82F6100872836 /* Controller */ = {
@@ -166,6 +186,7 @@
 				1870964C25C823EA00A3027D /* Sources */,
 				1870964D25C823EA00A3027D /* Frameworks */,
 				1870964E25C823EA00A3027D /* Resources */,
+				7DBE03CB287A005F1EA9D611 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -241,6 +262,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DBE03CB287A005F1EA9D611 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyApp/Pods-MyApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyApp/Pods-MyApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyApp/Pods-MyApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -389,6 +427,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MyApp/PrefixHeader.pch";
 				INFOPLIST_FILE = MyApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -406,6 +446,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MyApp/PrefixHeader.pch";
 				INFOPLIST_FILE = MyApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

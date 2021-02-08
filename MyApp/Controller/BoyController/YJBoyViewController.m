@@ -14,11 +14,29 @@
 
 @implementation YJBoyViewController
 
+#pragma mark - Lifecycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.view.backgroundColor = [UIColor colorWithRed:102.0f/255.0f green:204.0f/255.0f blue:255.0f/255.0f alpha:1.0f];
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self setNavigationBar];
+    [self setTabBar];
+}
+
+#pragma mark - UI
+
+/// 设置导航栏
+- (void)setNavigationBar {
+    self.navigationController.navigationBar.barTintColor = BOY_TINT_COLOR;
+    self.navigationItem.title = @"每天爱你多一点";
+}
+
+/// 设置标签栏
+- (void)setTabBar {
+    [self.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor grayColor], NSFontAttributeName:[UIFont systemFontOfSize:14]} forState:UIControlStateNormal];
+    [self.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:BOY_TINT_COLOR, NSFontAttributeName:[UIFont systemFontOfSize:14]} forState:UIControlStateSelected];
 }
 
 /*

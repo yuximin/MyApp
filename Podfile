@@ -6,5 +6,6 @@ target 'MyApp' do
   use_frameworks!
 
   # Pods for MyApp
+  pod 'Masonry'
 
 end
