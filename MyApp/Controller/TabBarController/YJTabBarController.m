@@ -26,17 +26,27 @@
 
 - (void)createChildViewControllers {
     YJBoyViewController *boyViewController = [[YJBoyViewController alloc] init];
-    [self setupChildViewControllerIn:boyViewController withImage:@"boy_nor" andSelectedImage:@"boy_sel" andTitle:@"小细" andTag:0];
+    [self setupChildViewControllerIn:boyViewController withImage:@"boy_nor" andSelectedImage:@"boy_sel" andTitle:@"小细" andTitleColor:[UIColor grayColor] andTitleSelectedColor:BOY_TINT_COLOR andTag:0];
     
     YJGirlViewController *girlViewController = [[YJGirlViewController alloc] init];
-    [self setupChildViewControllerIn:girlViewController withImage:@"girl_nor" andSelectedImage:@"girl_sel" andTitle:@"阿金" andTag:1];
+    [self setupChildViewControllerIn:girlViewController withImage:@"girl_nor" andSelectedImage:@"girl_sel" andTitle:@"阿金" andTitleColor:[UIColor grayColor] andTitleSelectedColor:GIRL_TINT_COLOR andTag:1];
 }
 
-- (void)setupChildViewControllerIn:(UIViewController *)viewController withImage:(NSString *)image andSelectedImage:(NSString *)selectedImage andTitle:(NSString *)title andTag:(NSInteger)tag {
+- (void)setupChildViewControllerIn:(UIViewController *)viewController withImage:(NSString *)image andSelectedImage:(NSString *)selectedImage andTitle:(NSString *)title andTitleColor:(UIColor *)titleColor andTitleSelectedColor:(UIColor *)titleSelectedColor andTag:(NSInteger)tag {
     viewController.tabBarItem.image = [[UIImage imageNamed:image] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     viewController.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     viewController.tabBarItem.tag = tag;
     viewController.tabBarItem.title = title;
+    
+    // 设置标签栏字体颜色大小
+    [viewController.tabBarItem setTitleTextAttributes:@{
+        NSForegroundColorAttributeName: titleColor,
+        NSFontAttributeName: [UIFont systemFontOfSize:14]
+     } forState:UIControlStateNormal];
+    [viewController.tabBarItem setTitleTextAttributes:@{
+        NSForegroundColorAttributeName: titleSelectedColor,
+        NSFontAttributeName: [UIFont systemFontOfSize:14]
+    } forState:UIControlStateSelected];
     
     UINavigationController *navC = [[UINavigationController alloc] initWithRootViewController:viewController];
     [self addChildViewController:navC];

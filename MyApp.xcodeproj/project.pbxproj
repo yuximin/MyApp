@@ -12,6 +12,7 @@
 		1870966025C823ED00A3027D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1870965F25C823ED00A3027D /* Assets.xcassets */; };
 		1870966325C823ED00A3027D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1870966125C823ED00A3027D /* LaunchScreen.storyboard */; };
 		1870966625C823ED00A3027D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1870966525C823ED00A3027D /* main.m */; };
+		188A4C8625D12DCD0002BEC9 /* YJTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 188A4C8525D12DCD0002BEC9 /* YJTools.m */; };
 		18CA75A525C8300500872836 /* YJTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CA75A425C8300500872836 /* YJTabBarController.m */; };
 		18CA75A925C8334800872836 /* YJBoyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CA75A825C8334800872836 /* YJBoyViewController.m */; };
 		18CA75AC25C8337200872836 /* YJGirlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CA75AB25C8337200872836 /* YJGirlViewController.m */; };
@@ -30,6 +31,9 @@
 		1870966525C823ED00A3027D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		188A4C7E25D1147A0002BEC9 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		188A4C8025D114F00002BEC9 /* MacroDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroDefine.h; sourceTree = "<group>"; };
+		188A4C8225D12BBF0002BEC9 /* ConstDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConstDefine.h; sourceTree = "<group>"; };
+		188A4C8425D12DCD0002BEC9 /* YJTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJTools.h; sourceTree = "<group>"; };
+		188A4C8525D12DCD0002BEC9 /* YJTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJTools.m; sourceTree = "<group>"; };
 		18CA75A325C8300500872836 /* YJTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJTabBarController.h; sourceTree = "<group>"; };
 		18CA75A425C8300500872836 /* YJTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJTabBarController.m; sourceTree = "<group>"; };
 		18CA75A725C8334800872836 /* YJBoyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJBoyViewController.h; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 		188A4C7F25D114C10002BEC9 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				188A4C8325D12DB10002BEC9 /* Tools */,
 				188A4C8125D117E40002BEC9 /* Defines */,
 			);
 			path = Utils;
@@ -103,8 +108,18 @@
 			isa = PBXGroup;
 			children = (
 				188A4C8025D114F00002BEC9 /* MacroDefine.h */,
+				188A4C8225D12BBF0002BEC9 /* ConstDefine.h */,
 			);
 			path = Defines;
+			sourceTree = "<group>";
+		};
+		188A4C8325D12DB10002BEC9 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				188A4C8425D12DCD0002BEC9 /* YJTools.h */,
+				188A4C8525D12DCD0002BEC9 /* YJTools.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		18CA759E25C82F6100872836 /* Controller */ = {
@@ -289,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1870965525C823EA00A3027D /* AppDelegate.m in Sources */,
+				188A4C8625D12DCD0002BEC9 /* YJTools.m in Sources */,
 				18CA75AC25C8337200872836 /* YJGirlViewController.m in Sources */,
 				18CA75A525C8300500872836 /* YJTabBarController.m in Sources */,
 				18CA75A925C8334800872836 /* YJBoyViewController.m in Sources */,

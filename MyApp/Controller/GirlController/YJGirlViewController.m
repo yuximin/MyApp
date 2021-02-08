@@ -22,7 +22,6 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     [self setNavigationBar];
-    [self setTabBar];
 }
 
 #pragma mark - UI
@@ -31,12 +30,6 @@
 - (void)setNavigationBar {
     self.navigationController.navigationBar.barTintColor = GIRL_TINT_COLOR;
     self.navigationItem.title = @"我想你啦";
-}
-
-/// 设置标签栏
-- (void)setTabBar {
-    [self.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor grayColor], NSFontAttributeName:[UIFont systemFontOfSize:14]} forState:UIControlStateNormal];
-    [self.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:GIRL_TINT_COLOR, NSFontAttributeName:[UIFont systemFontOfSize:14]} forState:UIControlStateSelected];
 }
 
 /*
