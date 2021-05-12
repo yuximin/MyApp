@@ -79,8 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				188A4C7F25D114C10002BEC9 /* Utils */,
-				18CA759F25C82F7100872836 /* Model */,
-				18CA75A025C82F7B00872836 /* View */,
 				18CA759E25C82F6100872836 /* Controller */,
 				1870965325C823EA00A3027D /* AppDelegate.h */,
 				1870965425C823EA00A3027D /* AppDelegate.m */,
@@ -130,20 +128,6 @@
 				18CA75A125C82F9200872836 /* TabBarController */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		18CA759F25C82F7100872836 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		18CA75A025C82F7B00872836 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		18CA75A125C82F9200872836 /* TabBarController */ = {
